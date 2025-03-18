@@ -14,6 +14,6 @@
 
 
 fun main() {
-    println("Hello World!")
+    println("old gold game")
 }
 
