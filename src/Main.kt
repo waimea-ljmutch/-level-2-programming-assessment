@@ -37,22 +37,28 @@ fun main() {
     println("INSTRUCTIONS")
     println("so what you have to do is there is two players player 1 & player 2.")
     println("the first player would go and you would role the die to see what number")
-    println("you get whatever number you get it would add to your points. for the")
-    println("first round there will be no bad numbers so that the round doesnt end")
-    println("quick before both players play first then the round starts you will")
-    println("roll the die and there will be a bad number if you get that number you")
-    println("lose. It will go on until one person looses bye the die or the other person")
+    println("you get whatever number you get it would add to your points. ")
+    println("It will go on until one person looses bye the die or the other person")
     println("gets the most points ")
     println("+--------------------------------------------------------------------------------+")
 
+
+
+
+    // getting player names
     println("Enter your name player 1: ")
     val player1 = readln()
-    println("player1: ${player1} ")
+    println("player1:  ${player1} ")
 
 
     println("Enter you name player 2: ")
     val player2 = readln()
     println("player2: ${player2} ")
+    
+
+
+    println("do you wish to continue yes/no")
+    var dicegame = readln()
 
 
 
@@ -62,7 +68,20 @@ fun main() {
 
 
 
+    println("welcome to the dice game  ${player1} and ${player2} ")
+    println()
 
+
+
+    val dice= mutableListOf<String>()
+
+    dice.add(1.toString())
+    dice.add(2.toString())
+    dice.add(3.toString())
+    dice.add(4.toString())
+    dice.add(5.toString())
+    dice.add(6.toString())
+    println(dice)
 
 
 
