@@ -1,3 +1,5 @@
+
+
 /**
  * =====================================================================
  * Programming Project for NCEA Level 2, Standard 91896
@@ -45,6 +47,7 @@ fun main() {
 
 
 
+
     // getting player names
     println("Enter your name player 1: ")
     val player1 = readln()
@@ -54,23 +57,17 @@ fun main() {
     println("Enter you name player 2: ")
     val player2 = readln()
     println("player2: ${player2} ")
-    
-
-
-    println("do you wish to continue yes/no")
-    var dicegame = readln()
-
-
-
-
-
-
-
-
 
     println("welcome to the dice game  ${player1} and ${player2} ")
     println()
 
+    println("do you wish to play yes/no")
+
+
+
+    if (player1 == "z" && player2 == "z") {
+
+    }
 
 
     val dice= mutableListOf<String>()
@@ -84,6 +81,20 @@ fun main() {
     println(dice)
 
 
+
+
+    fun getString(prompt: String): String {
+        var userInput: String
+
+        while(true) {
+            print(prompt)
+
+            userInput = readln()
+            if (userInput.isNotBlank()) break
+        }
+
+        return userInput
+    }
 
 
 }
