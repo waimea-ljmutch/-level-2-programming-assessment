@@ -59,15 +59,14 @@ fun main() {
     println("player2: ${player2} ")
 
     println("welcome to the dice game  ${player1} and ${player2} ")
-    println()
+    println("please press x to start player 1")
 
-    println("do you wish to play yes/no")
+    //rolling the die
 
 
 
-    if (player1 == "z" && player2 == "z") {
 
-    }
+    0..6).random()
 
 
     val dice= mutableListOf<String>()

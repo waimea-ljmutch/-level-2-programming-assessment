@@ -10,23 +10,24 @@ Terminology:
 
 ---
 
-## Example Test Name
+## player input
 
-Example test description. Example test description. Example test description. Example test description. Example test description. Example test description.
+the players should be working and it should show on the screen 
+
 
 ### Test Data To Use
 
-Details of test data and reasons for selection. Details of test data and reasons for selection. Details of test data and reasons for selection.
+i will run the game multiple times and every time I will change it to make it better
 
 ### Expected Test Result
 
-Statement detailing what should happen. Statement detailing what should happen. Statement detailing what should happen. Statement detailing what should happen. 
+
 
 ---
 
-## Example Test Name
+## 
 
-Example test description. Example test description. Example test description. Example test description. Example test description. Example test description.
+.
 
 ### Test Data To Use
 
