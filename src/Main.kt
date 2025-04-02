@@ -1,3 +1,4 @@
+import javax.print.attribute.standard.RequestingUserName
 
 
 /**
@@ -50,25 +51,29 @@ fun main() {
 
     // getting player names
     println("Enter your name player 1: ")
-    val player1 = readln()
-    println("player1:  ${player1} ")
+    val playername1 = readln()
+    println("player1:  ${playername1} ")
 
 
     println("Enter you name player 2: ")
-    val player2 = readln()
-    println("player2: ${player2} ")
+    val PlayerName2 = readln()
+    println("player2: ${PlayerName2} ")
 
-    println("welcome to the dice game  ${player1} and ${player2} ")
-    println("please press x to start player 1")
+    println("welcome to the dice game  ${playername1} and ${PlayerName2} ")
 
     //rolling the die
+fun rollDice(playerName: String ): {
+    println("please press x to roll the dice $playerName")
+    println()
+    val
+
+    }
 
 
 
+    1..6).random()
 
-    0..6).random()
-
-
+   // getting a list
     val dice= mutableListOf<String>()
 
     dice.add(1.toString())
@@ -95,5 +100,11 @@ fun main() {
         return userInput
     }
 
+
+}
+//rolling the die
+fun rollDice(playerName: String ): {
+    println("please press x to roll the dice")
+    println()
 
 }
