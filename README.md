@@ -1,4 +1,5 @@
-# Old gold game
+# The dice game
+
 
 by Liam Mutch
 
