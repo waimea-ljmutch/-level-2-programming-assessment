@@ -13,11 +13,12 @@ import kotlin.random.Random
  * =====================================================================
  */
 
+var totalscore1 = 0
+var totalscore2 = 0
+
 var score1 = 0
 var score2 = 0
 
-var turn1 = 0
-var turn2 = 0
 
 
 fun main() {
@@ -53,54 +54,58 @@ fun main() {
     // getting player names
     val player1 = getString("enter your name player 1:")
     val player2 = getString("enter your name player 2:")
-    println("welcome to the dice game  $player1 and $player2! ")
+    println("welcome to the dice game  $player1 and $player2 ")
 
-// there will be 5 rounds
+// getting a list
+    val dice = mutableListOf<String>()
+
+    dice.add(1.toString())
+    dice.add(2.toString())
+    dice.add(3.toString())
+    dice.add(4.toString())
+    dice.add(5.toString())
+    dice.add(6.toString())
+    println("the dice are $dice")
+
+
     for (round in 1..5) {
-        println("+--- Round $round ---+")
+        println("\n+--- Round $round ---+")
 
         // Player 1's Turn
-        turn1 == rollDice(player1)
-        score1 += turn1 // Add the score of Player 1
-
+        score1 = rollDice(player1)
+        totalscore1 += score1
+        println("totalscore1: $totalscore1")
         // Player 2's Turn
-        turn2 == rollDice(player2)
-        score2 += turn2 // Add the score of Player 2
+        score2 = rollDice(player2)
+        totalscore2 += score2
+        println("totalscore2: $totalscore2")
 
-        println("Total score after Round $round:")
-        println("$player1's score: $score1")
-        println("$player2's score: $score2")
-        println("+------------------------+")
+
     }
-
-
-
-// Final results
-    println("Game over!")
-    println("$player1's total score: $score1")
-    println("$player2's total score: $score2")
-
-    if (score1 > score2) {
-        println("$player1 wins!")
-    } else if (score2 > score1) {
-        println("$player2 wins!")
-    } else {
-        println("It's a tie!")
+    when {
+        totalscore1 > totalscore2 -> println("Congratulations $player1 you won the game with a total score of $totalscore1")
+        totalscore2 > totalscore1 -> println("Congratulations $player2 you won the game with a total score of $totalscore2")
+        else -> println("It's a tie the game ended with a total score of $totalscore1")
     }
 }
 
-fun getString(S: String): String {
+
+
+fun getString(s: String): String {
     var userInput: String
     while (true) {
-        val prompt = "$S "
+        val prompt = "$s "
         println(prompt)
         userInput = readln()
         if (userInput.isNotBlank())
             return userInput
 
     }
+
+
 }
-// Function to roll a die and return the result
+
+
 fun rollDice(playerName: String): Int {
     print("$playerName, Please type 'y' to roll: ")
     readln() // Wait for the user's input
@@ -108,7 +113,5 @@ fun rollDice(playerName: String): Int {
     println("$playerName rolled a $roll")
     return roll
 }
-
-
 
 
