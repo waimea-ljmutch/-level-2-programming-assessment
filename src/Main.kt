@@ -46,8 +46,9 @@ fun main() {
     println("so what you have to do is there is two players player 1 & player 2.")
     println("the first player would go and you would role the die to see what number")
     println("you get whatever number you get it would add to your points. ")
-    println("It will go on until one person looses bye the die or the other person")
-    println("gets the most points ")
+    println("It will go on until the five rounds are done then it will declare" )
+    println("a winner with the most points and if the users both have the same amount ")
+    println(" of points it will say a tie")
     println("+--------------------------------------------------------------------------------+")
 
 
