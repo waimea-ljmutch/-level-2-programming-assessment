@@ -83,6 +83,7 @@ fun main() {
 
 
     }
+    //showing who won the game
     when {
         totalscore1 > totalscore2 -> println("Congratulations $player1 you won the game with a total score of $totalscore1")
         totalscore2 > totalscore1 -> println("Congratulations $player2 you won the game with a total score of $totalscore2")
